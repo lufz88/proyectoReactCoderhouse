@@ -1,9 +1,10 @@
 import './App.css';
+import NavbarContainer from './components/Navbar/NavbarContainer';
 
 function App() {
 	return (
-		<div className="App">
-			<h1>Hola desde React</h1>
+		<div className='App'>
+			<NavbarContainer />
 		</div>
 	);
 }
