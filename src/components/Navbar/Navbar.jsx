@@ -10,10 +10,10 @@ const Navbar = () => {
 				alt='logo'
 			/>
 			<ul className={styles.itemsContainer}>
-				<li>Todos</li>
-				<li>Shorts</li>
-				<li>Bermudas</li>
-				<li>Jeans</li>
+				<li className={styles.item}>Todos</li>
+				<li className={styles.item}>Shorts</li>
+				<li className={styles.item}>Bermudas</li>
+				<li className={styles.item}>Jeans</li>
 			</ul>
 			<CarWidgetContainer />
 		</div>

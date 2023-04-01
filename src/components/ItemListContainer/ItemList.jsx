@@ -1,5 +1,5 @@
 const ItemList = ({ saludo }) => {
-	return <div>{saludo}</div>;
+	return <div style={{ fontSize: '36px' }}>{saludo}</div>;
 };
 
 export default ItemList;
