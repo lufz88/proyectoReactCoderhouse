@@ -1,0 +1,25 @@
+.navbarContainer {
+	color: rgb(245, 245, 245);
+	display: flex;
+	gap: 12px;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 8px;
+	background-color: rgb(14, 13, 13);
+	margin-bottom: 12px;
+}
+
+.itemsContainer {
+	display: flex;
+	width: 100%;
+	align-items: flex-end;
+	gap: 100px;
+	list-style: none;
+}
+
+.navbarLogo {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid rgba(26, 117, 203, 0.898);
+}
