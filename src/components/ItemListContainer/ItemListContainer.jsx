@@ -1,8 +1,6 @@
 import ItemList from './ItemList';
 
-const saludo = 'Bienvenidos a PantsStore';
-
-const ItemListContainer = () => {
+const ItemListContainer = ({ saludo }) => {
 	return <ItemList saludo={saludo} />;
 };
 
