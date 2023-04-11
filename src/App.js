@@ -1,12 +1,14 @@
 import './App.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import NavbarContainer from './components/Navbar/NavbarContainer';
+import FetchingData from './components/FetchingData/FetchingData';
+// import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+// import NavbarContainer from './components/Navbar/NavbarContainer';
 
 function App() {
 	return (
 		<div className='App'>
-			<NavbarContainer />
-			<ItemListContainer />
+			{/* <NavbarContainer />
+			<ItemListContainer /> */}
+			<FetchingData />
 		</div>
 	);
 }
