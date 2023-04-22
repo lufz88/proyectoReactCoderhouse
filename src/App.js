@@ -10,9 +10,9 @@ function App() {
 			<Routes>
 				<Route element={<NavbarContainer />}>
 					<Route path='/' element={<ItemListContainer />} />
-					<Route path='/shorts' element={<ItemListContainer />} />
-					<Route path='/bermudas' element={<ItemListContainer />} />
-					<Route path='/jeans' element={<ItemListContainer />} />
+					<Route path='/category/:categoryName' element={<ItemListContainer />} />
+					<Route path='/category/:categoryName' element={<ItemListContainer />} />
+					<Route path='/category/:categoryName' element={<ItemListContainer />} />
 					<Route path='/itemDetail/:id' element={<ItemDetailContainer />} />
 					<Route path='*' element={<h1>404 - La ruta no existe</h1>} />
 				</Route>
