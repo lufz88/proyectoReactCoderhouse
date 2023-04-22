@@ -1,0 +1,58 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"title": "Blue Jean",
+			"price": 10000,
+			"stock": 2,
+			"description": "Este es el jean azul más comodo",
+			"category": "jeans",
+			"img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+		},
+		{
+			"id": 2,
+			"title": "Sport Short",
+			"price": 7000,
+			"stock": 4,
+			"description": "Un gran short de entrenamiento",
+			"category": "shorts",
+			"img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+		},
+		{
+			"id": 3,
+			"title": "Black Jean",
+			"price": 11000,
+			"stock": 5,
+			"description": "Un jean genial, pero negro",
+			"category": "jeans",
+			"img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+		},
+		{
+			"id": 4,
+			"title": "Bermuda gris",
+			"price": 9000,
+			"stock": 2,
+			"description": "Bermuda de jean gris super cómoda",
+			"category": "bermudas",
+			"img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+		},
+		{
+			"id": 5,
+			"title": "Bermuda de gabardina",
+			"price": 9500,
+			"stock": 2,
+			"description": "Bermuda de gabardina elastizada",
+			"category": "bermudas",
+			"img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+		},
+		{
+			"id": 6,
+			"title": "Short rústico gris",
+			"price": 15000,
+			"stock": 2,
+			"description": "Este es un short gris re piola para todos los días",
+			"category": "shorts",
+			"img": "https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png"
+		}
+	]
+}
