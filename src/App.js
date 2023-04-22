@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavbarContainer from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetail/ItemDetailContainer';
 
 function App() {
 	return (
@@ -12,7 +13,7 @@ function App() {
 					<Route path='/shorts' element={<ItemListContainer />} />
 					<Route path='/bermudas' element={<ItemListContainer />} />
 					<Route path='/jeans' element={<ItemListContainer />} />
-					{/* <Route path='/' element={<ItemDetailContainer />} /> */}
+					<Route path='/itemDetail/:id' element={<ItemDetailContainer />} />
 					<Route path='*' element={<h1>404 - La ruta no existe</h1>} />
 				</Route>
 			</Routes>

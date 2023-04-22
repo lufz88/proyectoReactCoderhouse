@@ -1,8 +1,9 @@
 import ItemCardContainer from '../ItemCard/ItemCardContainer';
+import styles from './ItemList.module.css';
 
 const ItemList = ({ items }) => {
 	return (
-		<div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', padding: '40px' }}>
+		<div className={styles.ItemList}>
 			{items.map(item => {
 				return <ItemCardContainer item={item} key={item.id} />;
 			})}

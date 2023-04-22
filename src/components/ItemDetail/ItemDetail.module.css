@@ -1,0 +1,22 @@
+.ItemDetail {
+	display: flex;
+	gap: 50px;
+	padding-top: 20px;
+	padding-left: 40px;
+	background-color: rgb(41, 43, 69);
+	height: 100vh;
+}
+
+.productImage {
+	align-self: self-start;
+	object-fit: contain;
+	max-width: 300px;
+}
+
+.infoContainer {
+	color: whitesmoke;
+}
+
+.infoContainer span {
+	font-weight: bold;
+}
