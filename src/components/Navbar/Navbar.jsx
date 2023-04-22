@@ -7,16 +7,21 @@ const Navbar = () => {
 		<>
 			<div className={styles.navbarContainer}>
 				<Link to='/'>
-					{/* en el 'to' le pongo la ruta a donde quiero que vaya*/}
 					<img className={styles.navbarLogo} src='https://res.cloudinary.com/dgwuimxmz/image/upload/v1680217535/Pngtree_blue_denim_summer_shorts_5862003_syjlmn.png' alt='logo' />
 				</Link>
 				<ul className={styles.itemsContainer}>
-					<Link to='/login'>
-						<li className={styles.item}>Todos</li>
+					<Link to='/' className={styles.item}>
+						<li>Todos</li>
 					</Link>
-					<li className={styles.item}>Shorts</li>
-					<li className={styles.item}>Bermudas</li>
-					<li className={styles.item}>Jeans</li>
+					<Link to='/shorts' className={styles.item}>
+						<li>Shorts</li>
+					</Link>
+					<Link to='/bermudas' className={styles.item}>
+						<li>Bermudas</li>
+					</Link>
+					<Link to='/jeans' className={styles.item}>
+						<li>Jeans</li>
+					</Link>
 				</ul>
 				<CarWidgetContainer />
 			</div>
