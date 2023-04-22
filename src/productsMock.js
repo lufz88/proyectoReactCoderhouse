@@ -6,7 +6,7 @@ export const products = [
 		stock: 2,
 		description: 'Este es el jean azul más comodo',
 		category: 'jeans',
-		img: 'https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png',
+		img: 'https://res.cloudinary.com/dgwuimxmz/image/upload/v1682176123/descarga_h3odjz.jpg',
 	},
 	{
 		id: 2,
@@ -15,7 +15,7 @@ export const products = [
 		stock: 4,
 		description: 'Un gran short de entrenamiento',
 		category: 'shorts',
-		img: 'https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png',
+		img: 'https://res.cloudinary.com/dgwuimxmz/image/upload/v1682176124/1cb7c13d-55f6-455f-9c19-fff8f166c42f-1_aosskw.jpg',
 	},
 	{
 		id: 3,
@@ -24,7 +24,7 @@ export const products = [
 		stock: 5,
 		description: 'Un jean genial, pero negro',
 		category: 'jeans',
-		img: 'https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png',
+		img: 'https://res.cloudinary.com/dgwuimxmz/image/upload/v1682176123/D_NQ_NP_966769-MLA48371578552_112021-O_biwyvq.jpg',
 	},
 	{
 		id: 4,
@@ -33,7 +33,7 @@ export const products = [
 		stock: 2,
 		description: 'Bermuda de jean gris super cómoda',
 		category: 'bermudas',
-		img: 'https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png',
+		img: 'https://res.cloudinary.com/dgwuimxmz/image/upload/v1682176124/D_NQ_NP_888869-MLA53662823159_022023-W_srzdg3.jpg',
 	},
 	{
 		id: 5,
@@ -42,7 +42,7 @@ export const products = [
 		stock: 2,
 		description: 'Bermuda de gabardina elastizada',
 		category: 'bermudas',
-		img: 'https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png',
+		img: 'https://res.cloudinary.com/dgwuimxmz/image/upload/v1682176124/1588356943190b563bae2753442c345ceea43d604b_ow18cs.jpg',
 	},
 	{
 		id: 6,
@@ -51,6 +51,6 @@ export const products = [
 		stock: 2,
 		description: 'Este es un short gris re piola para todos los días',
 		category: 'shorts',
-		img: 'https://res.cloudinary.com/dnqfh2chg/image/upload/v1669326932/free-metcon-4-zapatillas-de-entrenamiento-TQMCZg_fvia3m.png',
+		img: 'https://res.cloudinary.com/dgwuimxmz/image/upload/v1682176124/short-hang-loose-mae-rustico-gris-208020000104001-1_bmrxlw.jpg',
 	},
 ];
