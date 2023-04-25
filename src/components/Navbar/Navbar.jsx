@@ -1,4 +1,4 @@
-import CarWidgetContainer from '../CarWidget/CarWidgetContainer';
+import CartWidgetContainer from '../CartWidget/CartWidgetContainer';
 import styles from './Navbar.module.css';
 import { Outlet, Link } from 'react-router-dom';
 
@@ -23,7 +23,9 @@ const Navbar = () => {
 						<li>Jeans</li>
 					</Link>
 				</ul>
-				<CarWidgetContainer />
+				<Link to='/cart' className={styles.item}>
+					<CartWidgetContainer />
+				</Link>
 			</div>
 			<Outlet /> {/* Darle acceso al wrapper a los children */}
 		</>
