@@ -1,11 +1,11 @@
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import styles from './CartWidget.module.css';
 
-const CartWidget = ({ getTotalQuantity }) => {
+const CartWidget = ({ total }) => {
 	return (
 		<>
 			<AiOutlineShoppingCart size={40} color='whitesmoke' />
-			<div className={styles.counter}>{getTotalQuantity}</div>
+			<div className={styles.counter}>{total}</div>
 		</>
 	);
 };

@@ -3,9 +3,11 @@ import CartView from './CartView';
 import { CartContext } from '../../context/CartContext';
 
 const CartViewContainer = () => {
-	const { cart, limpiarCarrito, getTotalPrice } = useContext(CartContext);
+	const { cart, limpiarCarrito, getTotalPrice, eliminarDelCarrito } = useContext(CartContext);
 
-	return <CartView cart={cart} limpiarCarrito={limpiarCarrito} getTotalPrice={getTotalPrice} />;
+	let total = getTotalPrice();
+
+	return <CartView cart={cart} eliminarDelCarrito={eliminarDelCarrito} limpiarCarrito={limpiarCarrito} total={total} />;
 };
 
 export default CartViewContainer;

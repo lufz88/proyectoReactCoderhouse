@@ -8,7 +8,7 @@ const Counter = ({ cantidad, sumar, restar, onAdd }) => {
 			<span>{cantidad}</span>
 			<Button onClick={sumar}>+</Button>
 			<div>
-				<Button onClick={onAdd}>Agregar al Carrito</Button>
+				<Button onClick={() => onAdd(cantidad)}>Agregar al Carrito</Button>
 			</div>
 		</div>
 	);
