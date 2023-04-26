@@ -1,5 +1,5 @@
-import React from 'react';
 import styles from './ItemDetail.module.css';
+import CounterContainer from '../Counter/CounterContainer';
 
 const ItemDetail = ({ product }) => {
 	return (
@@ -11,6 +11,7 @@ const ItemDetail = ({ product }) => {
 				<p>
 					Precio: <span>$ {product.price}</span>
 				</p>
+				<CounterContainer product={product} />
 			</div>
 		</div>
 	);
