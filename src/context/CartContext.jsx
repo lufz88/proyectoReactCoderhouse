@@ -15,7 +15,7 @@ const CartContextProvider = ({ children }) => {
 		if (existe) {
 			let newCart = cart.map(elemento => {
 				if (elemento.id === producto.id) {
-					return { ...elemento, quantity: elemento.quantity + producto.quantity };
+					return { ...elemento, quantity: producto.quantity };
 				} else {
 					return elemento;
 				}
@@ -45,7 +45,12 @@ const CartContextProvider = ({ children }) => {
 		return total;
 	};
 
-	let data = { cart, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, getTotalPrice, getTotalQuantity };
+	const getQuantityById = id => {
+		let product = cart.find(elemento => elemento.id === id);
+		return product?.quantity;
+	};
+
+	let data = { cart, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, getTotalPrice, getTotalQuantity, getQuantityById };
 
 	return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };

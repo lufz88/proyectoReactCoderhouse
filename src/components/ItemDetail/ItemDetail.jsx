@@ -1,7 +1,7 @@
 import styles from './ItemDetail.module.css';
-import CounterContainer from '../Counter/CounterContainer';
+import CounterItemContainer from '../Counter/CounterItemContainer';
 
-const ItemDetail = ({ product, onAdd }) => {
+const ItemDetail = ({ product, onAdd, totalQuantity }) => {
 	return (
 		<div className={styles.ItemDetail}>
 			<img src={product.img} alt='imagen del producto' className={styles.productImage} />
@@ -11,7 +11,7 @@ const ItemDetail = ({ product, onAdd }) => {
 				<p>
 					Precio: <span>$ {product.price}</span>
 				</p>
-				<CounterContainer stock={product.stock} onAdd={onAdd} />
+				<CounterItemContainer stock={product.stock} onAdd={onAdd} initial={totalQuantity} />
 			</div>
 		</div>
 	);

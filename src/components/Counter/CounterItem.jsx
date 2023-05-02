@@ -1,7 +1,7 @@
 import { Button } from '@mui/material';
 import React from 'react';
 
-const Counter = ({ cantidad, sumar, restar, onAdd }) => {
+const CounterItem = ({ cantidad, sumar, restar, onAdd }) => {
 	return (
 		<div>
 			<Button onClick={restar}>-</Button>
@@ -14,4 +14,4 @@ const Counter = ({ cantidad, sumar, restar, onAdd }) => {
 	);
 };
 
-export default Counter;
+export default CounterItem;
