@@ -1,7 +1,8 @@
 import { Button } from '@mui/material';
 import styles from './Cart.module.css';
+import { Navigate } from 'react-router-dom';
 
-const CartView = ({ cart, limpiarCarrito, total, eliminarDelCarrito }) => {
+const CartView = ({ cart, limpiarCarrito, total, eliminarDelCarrito, navigate }) => {
 	return (
 		<div>
 			{cart.map(element => {
@@ -19,6 +20,7 @@ const CartView = ({ cart, limpiarCarrito, total, eliminarDelCarrito }) => {
 			})}
 			<Button onClick={limpiarCarrito}>Limpiar Carrito</Button>
 			<p>El total del carrito es {total}</p>
+			{cart.length > 0 && <Button onClick={() => navigate('/checkout')}>Terminar compra</Button>}
 		</div>
 	);
 };
