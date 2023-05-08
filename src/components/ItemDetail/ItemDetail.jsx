@@ -11,7 +11,7 @@ const ItemDetail = ({ product, onAdd, totalQuantity }) => {
 				<p>
 					Precio: <span>$ {product.price}</span>
 				</p>
-				<CounterItemContainer stock={product.stock} onAdd={onAdd} initial={totalQuantity} />
+				{product.stock > 0 ? <CounterItemContainer stock={product.stock} onAdd={onAdd} initial={totalQuantity} /> : <p>No hay stock</p>}
 			</div>
 		</div>
 	);

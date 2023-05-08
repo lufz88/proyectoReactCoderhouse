@@ -3,11 +3,10 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	padding: 16px 16px 8px 16px;
-	background-color: #0e0d0d;
+	background-color: #0e0d0dc9;
 }
 
 .itemsContainer {
-	color: rgb(245, 245, 245);
 	display: flex;
 	width: 100%;
 	align-items: flex-end;
@@ -23,5 +22,5 @@
 	width: 80px;
 	height: 80px;
 	border-radius: 50%;
-	border: 2px solid rgba(26, 117, 203, 0.898);
+	border: 2px solid #1d4ac6e5;
 }
