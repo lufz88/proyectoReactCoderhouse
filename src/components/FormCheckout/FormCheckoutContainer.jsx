@@ -7,7 +7,7 @@ import FormCheckout from './FormCheckout';
 import { useContext, useState } from 'react';
 
 const FormCheckoutContainer = () => {
-	const { cart, getTotalPrice, limpiarCarrito } = useContext(CartContext);
+	const { cart, getTotalPrice, limpiarCarrito, navigate } = useContext(CartContext);
 
 	const [orderId, setOrderId] = useState(null);
 
@@ -48,7 +48,7 @@ const FormCheckoutContainer = () => {
 		validateOnChange: false,
 	});
 
-	return <FormCheckout orderId={orderId} handleChange={handleChange} handleSubmit={handleSubmit} errors={errors} />;
+	return <FormCheckout navigate={navigate} orderId={orderId} handleChange={handleChange} handleSubmit={handleSubmit} errors={errors} />;
 };
 
 export default FormCheckoutContainer;

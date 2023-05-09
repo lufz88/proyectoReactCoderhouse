@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const CartContext = createContext();
 
@@ -36,7 +37,6 @@ const CartContextProvider = ({ children }) => {
 
 	const getTotalPrice = () => {
 		let total = cart.reduce((acc, elemento) => acc + elemento.price * elemento.quantity, 0);
-		console.log(cart);
 		return total;
 	};
 
@@ -50,7 +50,9 @@ const CartContextProvider = ({ children }) => {
 		return product?.quantity;
 	};
 
-	let data = { cart, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, getTotalPrice, getTotalQuantity, getQuantityById };
+	const navigate = useNavigate();
+
+	let data = { cart, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, getTotalPrice, getTotalQuantity, getQuantityById, navigate };
 
 	return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };

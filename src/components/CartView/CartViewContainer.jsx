@@ -1,11 +1,9 @@
 import { useContext } from 'react';
 import CartView from './CartView';
 import { CartContext } from '../../context/CartContext';
-import { useNavigate } from 'react-router-dom';
 
 const CartViewContainer = () => {
-	const { cart, limpiarCarrito, getTotalPrice, eliminarDelCarrito } = useContext(CartContext);
-	const navigate = useNavigate();
+	const { cart, limpiarCarrito, getTotalPrice, eliminarDelCarrito, navigate } = useContext(CartContext);
 
 	let total = getTotalPrice();
 

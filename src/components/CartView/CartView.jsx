@@ -7,7 +7,7 @@ const CartView = ({ cart, limpiarCarrito, total, eliminarDelCarrito, navigate })
 		<div>
 			{cart.map(element => {
 				return (
-					<div className={styles.ItemContainer}>
+					<div className={styles.ItemContainer} key={element.id}>
 						<div className={styles.ImgContainer}>
 							<img src={element.img} alt='imagen del product' />
 						</div>

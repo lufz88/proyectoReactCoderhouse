@@ -1,13 +1,15 @@
 import { Button, TextField } from '@mui/material';
 
-const FormCheckout = ({ orderId, handleChange, handleSubmit, errors }) => {
+const FormCheckout = ({ orderId, handleChange, handleSubmit, errors, navigate }) => {
 	return (
 		<>
 			{orderId ? (
 				<>
 					<h3>Tu código de compra es: {orderId}</h3>
 					<p>Guardalo porque te será solicitado para recibir tu compra</p>
-					<Button>Realizar otra compra</Button>
+					<Button variant='contained' onClick={() => navigate('/')}>
+						Realizar otra compra
+					</Button>
 				</>
 			) : (
 				<form onSubmit={handleSubmit}>
