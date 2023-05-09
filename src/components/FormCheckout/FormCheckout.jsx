@@ -14,7 +14,9 @@ const FormCheckout = ({ orderId, handleChange, handleSubmit, errors }) => {
 					<TextField name='nombre' id='outlined-basic' label='Nombre' variant='outlined' onChange={handleChange} error={errors.nombre ? true : false} helperText={errors.nombre} />
 					<TextField name='email' id='outlined-basic' label='Email' variant='outlined' onChange={handleChange} error={errors.email ? true : false} helperText={errors.email} />
 					<TextField name='telefono' id='outlined-basic' label='Teléfono' variant='outlined' onChange={handleChange} error={errors.telefono ? true : false} helperText={errors.telefono} />
-					<Button type='submit'>Comprar</Button>
+					<Button variant='contained' type='submit'>
+						Comprar
+					</Button>
 				</form>
 			)}
 		</>
