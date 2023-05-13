@@ -1,5 +1,6 @@
 import { createContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 export const CartContext = createContext();
 
@@ -29,9 +30,39 @@ const CartContextProvider = ({ children }) => {
 
 	const eliminarDelCarrito = id => {
 		const newCart = cart.filter(element => element.id !== id);
-		setCart(newCart);
+		Swal.fire({
+			title: '¿Está seguro que desea eliminar el producto?',
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#d33',
+			cancelButtonColor: '#3085d6',
+			confirmButtonText: '¡Sí, estoy seguro!',
+			cancelButtonText: 'Cancelar',
+		}).then(result => {
+			if (result.isConfirmed) {
+				Swal.fire('Eliminado', 'Su producto fue eliminado', 'success');
+				setCart(newCart);
+			}
+		});
 	};
 	const limpiarCarrito = () => {
+		Swal.fire({
+			title: '¿Está seguro que desea limpiar el carrito?',
+			icon: 'warning',
+			showCancelButton: true,
+			confirmButtonColor: '#d33',
+			cancelButtonColor: '#3085d6',
+			confirmButtonText: '¡Sí, estoy seguro!',
+			cancelButtonText: 'Cancelar',
+		}).then(result => {
+			if (result.isConfirmed) {
+				Swal.fire('Eliminado', 'Su carrito fue eliminado', 'success');
+				setCart([]);
+			}
+		});
+	};
+
+	const finalizarCompra = () => {
 		setCart([]);
 	};
 
@@ -52,7 +83,7 @@ const CartContextProvider = ({ children }) => {
 
 	const navigate = useNavigate();
 
-	let data = { cart, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, getTotalPrice, getTotalQuantity, getQuantityById, navigate };
+	let data = { cart, agregarAlCarrito, eliminarDelCarrito, limpiarCarrito, getTotalPrice, getTotalQuantity, getQuantityById, navigate, finalizarCompra };
 
 	return <CartContext.Provider value={data}>{children}</CartContext.Provider>;
 };

@@ -1,7 +1,24 @@
+.CartDetailContainer {
+	margin: 24px auto;
+	padding: 20px;
+	width: 40%;
+	min-width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	border: 1px solid #0000009b;
+}
+
 .ItemContainer {
-	margin: 12px 0 0 12px;
+	justify-content: center;
+	padding-bottom: 8px;
+	align-items: center;
+	width: 100%;
+	margin: 12px 0 24px 12px;
 	display: flex;
 	gap: 12px;
+	border-bottom: 1px solid #0000009b;
 }
 
 .ImgContainer {
@@ -16,6 +33,22 @@
 	object-fit: cover;
 }
 
+.ProductDetails {
+	width: 300px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+.ProductDetails p:nth-child(2) {
+	width: 200px;
+}
+
 .DeleteButton {
-	color: rgba(0, 0, 0, 0.606);
+	color: #0000009b;
+}
+
+.CartText {
+	font-size: 20px;
+	margin: 20px 0;
 }

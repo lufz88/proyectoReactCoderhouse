@@ -1,0 +1,11 @@
+.FormContainer,
+.OrderContainer {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	margin: 24px auto;
+	gap: 12px;
+	width: 400px;
+	padding: 20px;
+	border: 1px solid #0000009b;
+}

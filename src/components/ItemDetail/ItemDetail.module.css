@@ -1,4 +1,6 @@
 .ItemDetail {
+	width: 70%;
+	margin: 0 auto;
 	display: flex;
 	gap: 50px;
 	padding-top: 20px;
@@ -18,4 +20,10 @@
 
 .infoContainer span {
 	font-weight: bold;
+}
+
+@media (max-width: 600px) {
+	.ItemDetail {
+		flex-direction: column;
+	}
 }

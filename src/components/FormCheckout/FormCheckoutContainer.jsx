@@ -7,7 +7,7 @@ import FormCheckout from './FormCheckout';
 import { useContext, useState } from 'react';
 
 const FormCheckoutContainer = () => {
-	const { cart, getTotalPrice, limpiarCarrito, navigate } = useContext(CartContext);
+	const { cart, getTotalPrice, finalizarCompra, navigate } = useContext(CartContext);
 
 	const [orderId, setOrderId] = useState(null);
 
@@ -30,7 +30,7 @@ const FormCheckoutContainer = () => {
 			})
 		);
 
-		limpiarCarrito();
+		finalizarCompra();
 	};
 
 	const { handleChange, handleSubmit, errors } = useFormik({
