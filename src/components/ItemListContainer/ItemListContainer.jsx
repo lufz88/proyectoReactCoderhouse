@@ -1,9 +1,8 @@
 import ItemList from './ItemList';
-// import { products } from '../../productsMock';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import { dataBase } from '../../firebaseConfig';
-
+import BarLoader from 'react-spinners/BarLoader';
 import { getDocs, collection, query, where } from 'firebase/firestore';
 
 const ItemListContainer = () => {
@@ -37,7 +36,13 @@ const ItemListContainer = () => {
 
 	return (
 		<div>
-			<ItemList items={items} />
+			{items.length === 0 ? (
+				<div style={{ display: 'flex', justifyContent: 'center', marginTop: '24px' }}>
+					<BarLoader color='#0e0d0dc9' height={5} speedMultiplier={0.5} width={400} />
+				</div>
+			) : (
+				<ItemList items={items} />
+			)}
 		</div>
 	);
 };
