@@ -10,7 +10,9 @@ En este proyecto se utilizaron las siguientes librerías:
 
 Para clonar el repositorio usa el siguiente comando en tu consola:
 
-`git clone https://github.com/lufz88/proyectoReactCoderhouse.git`
+```plaintext
+git clone https://github.com/lufz88/proyectoReactCoderhouse.git
+```
 
 Para que sea funcional, necesitarás agregar las siguientes credenciales de tu propia base de datos de productos:
 
